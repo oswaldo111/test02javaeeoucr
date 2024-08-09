@@ -55,12 +55,15 @@ public class detalleordenoucrController {
     @GetMapping("editar/{id}")
     public String EditDetail(@PathVariable Long id, Model model) {
         model.addAttribute("detalle", detalleordenoucrService.ObtenerPorId(id));
+        model.addAttribute("ordenes", ordenoucrService.listarOrdenes());
+        model.addAttribute("productos", productooucrService.listartodos());
         return "detalle/detalle-form";
     }
 
     @GetMapping("eliminar/{id}")
-    public void DeleteDetalis(@PathVariable Long id) {
+    public String DeleteDetalis(@PathVariable Long id) {
         detalleordenoucrService.eliminar(id);
+        return "redirect:/detalle";
     }
     
     
