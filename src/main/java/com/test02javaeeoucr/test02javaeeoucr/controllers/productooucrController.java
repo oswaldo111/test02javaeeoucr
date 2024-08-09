@@ -40,11 +40,11 @@ public class productooucrController {
     @GetMapping("/editar/{id}")
     public String ShowEditProduct(@PathVariable Long id, Model model) {
         model.addAttribute("productos", productooucrService.ObtenerPorId(id));
-        return new String();
+        return "productos/productos-form";
     }
 
     @GetMapping("/eliminar/{id}")
-    public String DeleteProduct(@RequestParam Long id) {
+    public String DeleteProduct(@PathVariable Long id) {
         productooucrService.eliminar(id);
         return "redirect:/producto";
     }

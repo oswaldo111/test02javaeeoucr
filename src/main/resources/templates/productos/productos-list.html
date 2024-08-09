@@ -25,10 +25,10 @@
             <tr th:each="productos : ${productos}">
               <td th:text="${productos.id}"></td>
               <td th:text="${productos.nombreoucr}"></td>
-              <!-- <td>
-                <a class="btn btn-info mt-1 mb-1" th:href="@{/categoria/editar/{id}(id=${categoria.id})}">Editar</a>
-                <a class="btn btn-danger mt-1 mb-1" th:href="@{/categoria/eliminar/{id}(id=${categoria.id})}">Eliminar</a>
-            </td> -->
+              <td>
+                <a class="btn btn-info mt-1 mb-1" th:href="@{/producto/editar/{id}(id=${productos.id})}">Editar</a>
+                <a class="btn btn-danger mt-1 mb-1" th:href="@{/producto/eliminar/{id}(id=${productos.id})}">Eliminar</a>
+            </td> 
              
             </tr>
           </tbody>
