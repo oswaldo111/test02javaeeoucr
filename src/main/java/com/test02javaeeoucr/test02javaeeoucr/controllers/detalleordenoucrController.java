@@ -1,7 +1,6 @@
 package com.test02javaeeoucr.test02javaeeoucr.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.WebProperties.Resources.Chain.Strategy;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,9 +12,7 @@ import com.test02javaeeoucr.test02javaeeoucr.service.detalleordenoucrService;
 import com.test02javaeeoucr.test02javaeeoucr.service.ordenoucrService;
 import com.test02javaeeoucr.test02javaeeoucr.service.productooucrService;
 
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 
 

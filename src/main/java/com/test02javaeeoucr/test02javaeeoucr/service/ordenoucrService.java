@@ -6,8 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.test02javaeeoucr.test02javaeeoucr.models.ordenoucr;
-import com.test02javaeeoucr.test02javaeeoucr.models.productooucr;
-import com.test02javaeeoucr.test02javaeeoucr.repository.ordenoucrRepository;
+ import com.test02javaeeoucr.test02javaeeoucr.repository.ordenoucrRepository;
 
 @Service
 public class ordenoucrService {
